@@ -1,0 +1,22 @@
+steps:
+  - name: "gcr.io/cloud-builders/npm"
+    args: ["install"]
+    dir: "."
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      [
+        "functions",
+        "deploy",
+        "getDataAndSaveToGCS",
+        "--runtime",
+        "nodejs14",
+        "--region",
+        "europe-west9",
+        "--trigger-topic",
+        "stationsApi",
+        "--source",
+        ".",
+        "--gen2",
+        "--allow-unauthenticated",
+      ]
+    dir: "."
