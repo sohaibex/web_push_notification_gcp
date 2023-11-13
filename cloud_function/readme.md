@@ -125,8 +125,8 @@ Note: Vous avez commenté la partie Secret Manager dans votre code, mais j'ajout
 
 ### 4. **Coûts**
 
-- **Cloud Functions**: Vous êtes facturé pour le temps de calcul et le nombre d'invocations. Les 2 premiers millions d'invocations par mois sont gratuits.
-- **Cloud Storage**: Vous payez pour l'espace de stockage utilisé et le trafic sortant. Les 5 premiers Go de stockage sont gratuits chaque mois.
+- **Cloud Functions**: Les 2 premiers millions d'invocations par mois sont gratuits.
+- **Cloud Storage**: Les 5 premiers Go de stockage sont gratuits chaque mois.
 - **Cloud Scheduler**: Les trois premières tâches créées sont gratuites. Après cela, le coût est de 0,10 $ par tâche et par mois.
 - **Pub/Sub**: Les 10 premiers Go de données envoyées et reçues sont gratuits.
 
